@@ -11,3 +11,22 @@ silly_string_7 = "My favorite activity is 'gerund' with my 'adjective' 'noun'"
 silly_string_8 = "I like eating 'adjective' 'plural_noun' with lots of 'plural_noun'"
 
 
+picker = random.randint(1,8)
+
+if picker == 1:
+    breakdown_list = silly_string_1.split()
+if picker == 2:
+    breakdown_list = silly_string_2.split()
+if picker == 3:
+    breakdown_list = silly_string_3.split()
+if picker == 4
+    breakdown_list = silly_string_4.split()
+if picker == 5:
+    breakdown_list = silly_string_5.split()
+if picker == 6:
+    breakdown_list = silly_string_6.split()
+if picker == 7:
+    breakdown_list = silly_string_7.split()
+if picker == 8:
+    breakdown_list = silly_string_8.split()
+
