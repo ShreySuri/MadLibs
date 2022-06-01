@@ -30,3 +30,10 @@ if picker == 7:
 if picker == 8:
     breakdown_list = silly_string_8.split()
 
+breakdown_list.append("placeholder")
+word_count = 0
+
+while breakdown_list[i] != "placeholder":
+    i = i + 1
+
+breakdown_list.remove("placeholder")
