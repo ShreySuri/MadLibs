@@ -51,6 +51,8 @@ plural_noun = 0
 plural_noun_list = []
 proper_noun = 0
 proper_noun_list = []
+collection_noun = 0
+collection_noun_list = []
 verb = 0
 verb_list = []
 past_verb = 0
@@ -74,6 +76,9 @@ for i in range (0, word_count):
     if breakdown_list[i] == "'proper_noun'":
         proper_noun = proper_noun + 1
         proper_noun_list.append(i)
+    if breakdown_list[i] == "'collection_noun'":
+        collection_noun = collection_noun + 1
+        collection_noun_list.append(i)
     if breakdown_list[i] == "'verb'":
         verb = verb + 1
         verb_list.append(i)
@@ -102,6 +107,10 @@ for i in range (0, plural_noun):
 for i in range (0, proper_noun):
     word = input(print("Please enter a proper noun. "))
     word_placement = proper_noun_list[i]
+    breakdown_list[word_placement] = word
+for i in range (0, collection_noun):
+    word = input(print("Please enter a collection noun"))
+    word_placement = collection_noun_list[i]
     breakdown_list[word_placement] = word
 for i in range (0, verb):
     word = input(print("Please enter a verb. "))
