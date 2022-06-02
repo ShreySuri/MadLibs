@@ -19,7 +19,7 @@ if picker == 2:
     breakdown_list = silly_string_2.split()
 if picker == 3:
     breakdown_list = silly_string_3.split()
-if picker == 4
+if picker == 4:
     breakdown_list = silly_string_4.split()
 if picker == 5:
     breakdown_list = silly_string_5.split()
@@ -33,7 +33,37 @@ if picker == 8:
 breakdown_list.append("placeholder")
 word_count = 0
 
-while breakdown_list[i] != "placeholder":
-    i = i + 1
+while breakdown_list[word_count] != "placeholder":
+    word_count = word_count + 1
 
 breakdown_list.remove("placeholder")
+
+noun = 0
+plural_noun = 0
+proper_noun = 0
+verb = 0
+past_verb = 0
+adjective = 0
+onomatopoeia = 0
+gerund = 0
+
+
+
+for i in range (0, word_count):
+    if breakdown_list[i] == "'noun'":
+        noun = noun + 1
+    if breakdown_list[i] == "'plural_noun'":
+        plural_noun = plural_noun + 1
+    if breakdown_list[i] == "'proper_noun'":
+        proper_noun = proper_noun + 1
+    if breakdown_list[i] == "'verb'":
+        verb = verb + 1
+    if breakdown_list[i] == "'past_verb'":
+        past_verb = past_verb + 1
+    if breakdown_list[i] == "'adjective'":
+        adjective = adjective + 1
+    if breakdown_list[i] == "'onomatopoeia'":
+        onomatopoeia = onomatopoeia + 1
+    if breakdown_list[i] == "'gerund'":
+        gerund = gerund + 1
+
