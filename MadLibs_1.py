@@ -1,5 +1,12 @@
 import random
 
+def list_to_string(x):
+    str_1 = " "
+    return(str_1.join(x))
+
+
+
+
 
 silly_string_1 = "Hey diddle diddle the 'noun' and the 'noun' the 'noun' 'past_verb' over the 'noun'"
 silly_string_2 = "'proper_noun' and 'proper_noun' went up a 'noun' to fetch a 'collection_noun' of 'plural_noun'"
@@ -117,6 +124,6 @@ for i in range (0, gerund):
     word_placement = gerund_list[i]
     breakdown_list[word_placement] = word
 
-
+print(list_to_string(breakdown_list))
 
     
